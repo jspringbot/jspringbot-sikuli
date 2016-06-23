@@ -29,7 +29,7 @@
   </parent>
 
   <artifactId>jspringbot-sikulix</artifactId>
-  <version>1.4</version>
+  <version>1.5-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>jspringbot-sikulix</name>
 
