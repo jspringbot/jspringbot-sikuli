@@ -59,9 +59,9 @@
   </distributionManagement>
 
   <scm>
-    <connection>scm:git:https://github.com/jspringbot/jspringbot-sikuli.git</connection>
-    <url>scm:git:https://github.com/jspringbot/jspringbot-sikuli.git</url>
-    <developerConnection>scm:git:https://github.com/jspringbot/jspringbot-sikuli.git</developerConnection>
+    <connection>scm:git:https://github.com/jspringbot/jspringbot-sikulix.git</connection>
+    <url>scm:git:https://github.com/jspringbot/jspringbot-sikulix.git</url>
+    <developerConnection>scm:git:https://github.com/jspringbot/jspringbot-sikulix.git</developerConnection>
   </scm>
 
   <developers>
