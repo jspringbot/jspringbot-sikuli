@@ -1,0 +1,23 @@
+JSpringBot Sikulix Library for Robot Framework.
+
+= Configuration =
+
+Configure the following to use jspringbot-xml.
+
+1. Add this artifact in maven dependency
+
+|  <dependencies>
+|    <dependency>
+|      <groupId>org.jspringbot</groupId>
+|      <artifactId>jspringbot-sikulix</artifactId>
+|    </dependency>
+|  </dependencies>
+
+2. Import spring-sikulix in {{jspringbot-global.xml}}
+
+| <import resource="classpath:spring/spring-sikulix.xml"/>
+
+3. A {{jspringbot.properties}} file should exist in resources. See the possible properties below.
+
+| *Key* | *Default Value* | *Description* |
+| {{xml.remove.namespace}} | false | True to remove namespace, otherwise false. |

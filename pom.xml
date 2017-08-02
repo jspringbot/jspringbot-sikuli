@@ -18,18 +18,20 @@
   ~ limitations under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
     <groupId>org.jspringbot</groupId>
     <artifactId>jspringbot-libraries</artifactId>
-    <version>1.4</version>
+    <version>1.6-SNAPSHOT</version>
   </parent>
 
   <artifactId>jspringbot-sikulix</artifactId>
-  <version>1.5-SNAPSHOT</version>
+  <version>1.6-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>jspringbot-sikulix</name>
 
@@ -67,9 +69,8 @@
   <developers>
     <developer>
       <id>owner</id>
-      <email>alvinrdeleon@me.com</email>
+      <email>badong2210@yahoo.com</email>
       <roles>
-        <role>architect</role>
         <role>developer</role>
       </roles>
     </developer>
@@ -80,16 +81,6 @@
       <resource>
         <directory>src/main/resources/</directory>
         <filtering>true</filtering>
-        <excludes>
-          <exclude>**/*.zip</exclude>
-        </excludes>
-      </resource>
-      <resource>
-        <directory>src/main/resources/</directory>
-        <filtering>false</filtering>
-        <includes>
-          <include>**/*.zip</include>
-        </includes>
       </resource>
     </resources>
     <testResources>
@@ -102,32 +93,29 @@
 
   <dependencies>
     <dependency>
+      <groupId>org.jspringbot</groupId>
+      <artifactId>jspringbot-expression</artifactId>
+    </dependency>
+
+    <dependency>
       <groupId>com.sikulix</groupId>
       <artifactId>sikulixapi</artifactId>
       <version>1.1.0</version>
     </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>${junit.version}</version>
-      <optional>true</optional>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-all</artifactId>
-      <version>1.8.0-rc2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-test</artifactId>
-      <version>${spring.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>junit-addons</groupId>
-      <artifactId>junit-addons</artifactId>
-      <version>1.4</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
