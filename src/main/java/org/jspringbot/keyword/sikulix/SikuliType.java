@@ -32,7 +32,7 @@ public class SikuliType extends AbstractSikuliKeyword {
 
     @Override
     public Object execute(Object[] params) throws FindFailed {
-        helper.wait(String.valueOf(params[0]));
+        helper.type(String.valueOf(params[0]));
 
         return null;
     }
